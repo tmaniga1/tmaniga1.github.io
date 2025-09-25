@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Tyson Manigault's ITIS3135 First Course Page</title>
-    <a href = "itis3135/">Click to go to ITIS3135 Site</a>
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <h1>
-      I am Tyson Manigault and this is my ITIS3135 First Course Page
-    </h1>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITIS 3135 || Home Webpage</title>
+  <style>
+    :root {
+      --dark-blue: #2B2D42;
+      --gray: #8D99AE;
+      --off-white: #EDF2F4;
+      --red: #EF233C;
+      --deep-red: #D80032;
+    }
+    body {
+      background: var(--off-white);
+      color: var(--dark-blue);
+    }
+    .hero {
+      background-color: var(--dark-blue);
+      color: var(--off-white);
+      padding: 3em 1em 2em 1em;
+      margin-bottom: 2em;
+      border-radius: 0 0 2em 2em;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+	  text-align: center;
+    }
+    .hero h1 {
+		text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+      letter-spacing: 2px;
+      color: var(--off-white);
+    }
+    .hero nav {
+		text-align: center;
+      margin-top: 1em;
+    }
+    .hero a {
+      color: var(--red);
+      font-weight: bold;
+      margin: 0 0.5em;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .hero a:hover {
+      color: var(--deep-red);
+      text-decoration: underline;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 40vh;
+    }
+    .card {
+      background: var(--off-white);
+      border-radius: 1em;
+      box-shadow: 0 2px 12px rgba(43,45,66,0.07);
+      padding: 2em 2.5em;
+      margin: 2em 0;
+      text-align: left;
+      border: 1px solid var(--gray);
+    }
+    .card h2 {
+      color: var(--red);
+      margin-top: 0;
+    }
+    footer {
+      background: var(--dark-blue);
+      color: var(--off-white);
+      padding: 1.5em 0 0.5em 0;
+      border-radius: 2em 2em 0 0;
+      margin-top: 3em;
+	  text-align: center;
+    }
+    footer nav a {
+      color: var(--red);
+      margin: 0 0.5em;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    footer nav a:hover {
+      color: var(--deep-red);
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .card { padding: 1em; }
+      .hero h1 { font-size: 1.5em; }
+    }
+  </style>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="hero">
+    <h1>ITIS 3135 || Home Webpage</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ITIS3135.io/introduction.html">Introduction</a>
+      <a href="ITIS3135.io/contract.html">Contract</a>
+    </nav>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Welcome</h2>
+      <p>This is the homepage for ITIS 3135, Web Development, Fall 2025.</p>
+      <p>Use the navigation links above to explore the site.</p>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <a href="https://webpages.charlotte.edu/tmaniga1/ITIS3135.io/index.html">ITIS-3135 Page</a>
+      <a href="https://webpages.charlotte.edu/tmaniga1/">CLT Web</a>
+      <a href="https://webpages.charlotte.edu/tmaniga1/testedmantas/index.html">Tested Mantas</a>
+      <a href="https://github.com/tmaniga1">Github Profile</a>
+      <a href="https://tmaniga1.github.io/">Github.io</a>
+      <a href="https://www.linkedin.com">LinkedIn</a>
+    </nav>
+    <p style="margin-top:1em;">Designed By Manigault &copy; 2025</p>
+  </footer>
+</body>
+</html>
