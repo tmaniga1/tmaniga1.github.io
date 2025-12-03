@@ -16,34 +16,34 @@
       background: var(--off-white);
       color: var(--dark-blue);
     }
-    .hero {
+    header {
       background-color: var(--dark-blue);
       color: var(--off-white);
       padding: 3em 1em 2em 1em;
       margin-bottom: 2em;
       border-radius: 0 0 2em 2em;
       box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-	  text-align: center;
+      text-align: center;
     }
-    .hero h1 {
-		text-align: center;
+    header h1 {
+      text-align: center;
       font-size: 2.5em;
       margin-bottom: 0.2em;
       letter-spacing: 2px;
       color: var(--off-white);
     }
-    .hero nav {
-		text-align: center;
+    header nav {
+      text-align: center;
       margin-top: 1em;
     }
-    .hero a {
+    header nav a {
       color: var(--red);
       font-weight: bold;
       margin: 0 0.5em;
       text-decoration: none;
       transition: color 0.2s;
     }
-    .hero a:hover {
+    header nav a:hover {
       color: var(--deep-red);
       text-decoration: underline;
     }
@@ -53,7 +53,7 @@
       align-items: flex-start;
       min-height: 40vh;
     }
-    .card {
+    section {
       background: var(--off-white);
       border-radius: 1em;
       box-shadow: 0 2px 12px rgba(43,45,66,0.07);
@@ -62,11 +62,11 @@
       text-align: left;
       border: 1px solid var(--gray);
     }
-    .card h2 {
+    section h2 {
       color: var(--red);
       margin-top: 0;
     }
-    .card p {
+    section p {
       line-height: 1.6;
       margin-bottom: 1em;
       font-size: 1.1em;
@@ -92,16 +92,15 @@
       text-decoration: underline;
     }
     @media (max-width: 600px) {
-      .card { padding: 1em; }
-      .hero h1 { font-size: 1.5em; }
+      section { padding: 1em; }
+      header h1 { font-size: 1.5em; }
     }
   </style>
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="hero">
+  <header>
     <h1>Tyson Manigault</h1>
-    <p style="font-size:1.2em; margin:0.5em 0 0 0;">Home Webpage</p>
     <nav>
       <a href="index.html">Home</a>
       <a href="ITIS3135.io/introduction.html">Introduction</a>
@@ -109,8 +108,8 @@
     </nav>
   </header>
   <main>
-    <section class="card">
-      <h2>Welcome</h2>
+    <section>
+      <h2>Home Webpage</h2>
       <p>I am a student at the University of North Carolina at Charlotte, pursuing a degree in Computer Science with a concentration in Information Technology.</p>
       <p>I have a passion for technology and enjoy exploring new advancements in the field. In my free time, I like to work on personal coding projects, play video games, and stay active in the gym.</p>
     </section>
