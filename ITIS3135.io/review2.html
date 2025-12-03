@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peer Evaluation: Tristan Meyers' Project</title>
+  <style>
+    :root {
+      --dark-blue: #2B2D42;
+      --gray: #8D99AE;
+      --off-white: #EDF2F4;
+      --red: #EF233C;
+      --deep-red: #D80032;
+    }
+    body {
+      background: var(--off-white);
+      color: var(--dark-blue);
+    }
+    header {
+      background-color: var(--dark-blue);
+      color: var(--off-white);
+      padding: 3em 1em 2em 1em;
+      margin-bottom: 2em;
+      border-radius: 0 0 2em 2em;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    header h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+      letter-spacing: 2px;
+      color: var(--off-white);
+    }
+    header nav {
+      text-align: center;
+      margin-top: 1em;
+    }
+    header nav a {
+      color: var(--red);
+      font-weight: bold;
+      margin: 0 0.5em;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    header nav a:hover {
+      color: var(--deep-red);
+      text-decoration: underline;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 40vh;
+    }
+    section {
+      background: var(--off-white);
+      border-radius: 1em;
+      box-shadow: 0 2px 12px rgba(43,45,66,0.07);
+      padding: 2em 2.5em;
+      margin: 2em 0;
+      text-align: left;
+      border: 1px solid var(--gray);
+    }
+    section h2 {
+      color: var(--red);
+      margin-top: 0;
+    }
+    section p {
+      line-height: 1.6;
+      margin-bottom: 1em;
+      font-size: 1.1em;
+      text-align: center;
+    }
+    footer {
+      background: var(--dark-blue);
+      color: var(--off-white);
+      padding: 1.5em 0 0.5em 0;
+      border-radius: 2em 2em 0 0;
+      margin-top: 3em;
+	  text-align: center;
+    }
+    footer nav a {
+      color: var(--red);
+      margin: 0 0.5em;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    footer nav a:hover {
+      color: var(--deep-red);
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      section { padding: 1em; }
+      header h1 { font-size: 1.5em; }
+    }
+    /* Responsive image used on this page */
+    .section-img {
+      display: block;
+      max-width: 360px;
+      width: 100%;
+      height: auto;
+      margin: 0.8em auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+  </style>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Peer Evaluation</h1>
+    <div data-include="components/header.html"></div>
+  </header>
+  <main>
+    <section>
+      <h1>Tristan Meyers' Project</h1>
+      <section>
+        <h2>General Requirements</h2>
+        <ul>   
+          <li>Submission must link directly to the page being reviewed.</li>
+          <li>There should be no spaces or uppercase letters in file/folder names</li>
+          <li>Content is relevant and well-organized.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>General Feedback</h2>
+        <p>Link to project page:</p>
+        <a href="https://webpages.charlotte.edu/tmeyers3/itis3135/client_project/index.html"><img src="images/tmeyers_client_project.png" alt="Tristan Meyers' Project" class="section-img"></a>
+      <p>The page is well-designed and meets the project requirements.</p>
+    </section>
+    <section>
+            <h2>
+                Design Standards
+            </h2>
+            <h3>Contrast &amp; Readability</h3>
+            <ul>
+                <li>Font sizes must be readable.</li>
+                <li>Contrast should make text easy to read for all users.</li>
+            </ul>
+
+            <h3>Stylesheets</h3>
+            <ul>
+                <li>Use the site's shared stylesheet unless the assignment requires a unique one.</li>
+            </ul>
+
+            <h3>CRAP Principles</h3>
+            <ul>
+                <li><strong>Contrast:</strong> Make important elements stand out.</li>
+                <li><strong>Repetition:</strong> Reuse colors, spacing, fonts, and layout patterns.</li>
+                <li><strong>Alignment:</strong> Everything should line up cleanly.</li>
+                <li><strong>Proximity:</strong> Related items should be grouped together.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>
+                Design Standards Evaluation
+            </h2>
+            <h3>
+                Contrast &amp; Readability Evaluation
+            </h3>
+            <p>
+                Contrast looks good everything is easy to see and read.
+            </p>
+            <h3>
+                Stylesheets Evaluation
+            </h3>
+            <p>
+                Stylesheet is correct and looks good. 
+            </p>
+            <h3>
+                CRAP Principles Evaluation
+            </h3>
+            <p>
+                Contrast is good and the repetition is good as there is a consistent
+                theme throughout the whole site. The alignments and proximity looks good nothing is out of place.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Page Structure Requirements
+            </h2>
+            <ul>
+                <li>Each page must include:
+                    <ul>
+                        <li>Header</li>
+                        <li>Main area</li>
+                        <li>Footer</li>
+                        <li>(Optional) Navigation between header and main</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Header:</strong>
+                    <ul>
+                        <li>Contains site/brand name in an &lt;h1&gt;.</li>
+                        <li>Homework pages use: Student Name • Course ID • Course Name.</li>
+                        <li>Branded pages use the business/brand name.</li>
+                        <li><strong>Do NOT include page name in the header.</strong></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Main:</strong> Must begin with the page title in an &lt;h2&gt;.
+                </li>
+
+                <li>
+                    Every page must include a consistent brand tagline somewhere.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>
+                Page Structure Requirements Evaluation
+            </h2>
+            <p>
+                All pages have a Header Main and Footer and a Navagation bar. The nav bar
+                looks good.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Assignment-Specific Requirements
+            </h2>
+            <p>
+                Your assignment may include unique requirements. Be sure to create a checklist based on the assignment 
+                instructions and verify that each part is complete.
+            </p>
+            <p>
+                If any part of the assignment seems to conflict with this checklist, ask for clarification in the class forums.
+            </p>
+        </section>
+        <section>
+            <h2>
+                Assignment-Specific Requirements Evaluation
+            </h2>
+            <p>
+                Website has all the required pages a index/home and 4 others that are revelent to the client.
+                There is a navagation bar that works and goes to all the other pages. It's a little bare bones and could 
+                use more content.
+            </p>
+        </section>
+  </main>
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/HTML.Include.min.js"></script>
+</body>
+</html>

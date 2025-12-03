@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Website Evaluations</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <style>
+    /* Layout: place the page title above the navigation and center everything */
+    header { display:flex; flex-direction:column; align-items:center; gap:0.4rem; }
+    header h1 { margin:0.4rem 0 0; text-align:center; }
+
+    /* Main area: stack sections and distribute space evenly on taller viewports */
+    main {
+      padding:2em 1em;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:space-around; /* evenly space sections vertically */
+      min-height: calc(100vh - 240px); /* leave room for header + footer */
+      gap:2rem;
+    }
+
+    /* Constrain section width and center their contents */
+    section {
+      margin:0;
+      width:100%;
+      max-width:820px;
+      box-sizing:border-box;
+      padding:1.2rem 1.4rem;
+      border-radius:8px;
+      background:var(--off-white);
+      border:1px solid var(--gray);
+    }
+
+    section h3 a { color: inherit; text-decoration: none; }
+    .crap-list { margin-top:0.5em }
+  </style>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Website Evaluations</h1>
+    <div data-include="components/header.html"></div>
+  </header>
+
+  <main>
+    <h2>Website Evaluations</h2>
+
+    <section>
+      <h3><a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a></h3>
+      <p>YouTube is a large, media-rich video platform used for streaming, discovery, and content hosting. It delivers videos, channels, recommendations, and account-based features.</p>
+      <ul class="crap-list">
+        <li><strong>Contrast</strong> — YouTube generally uses strong contrast between text and backgrounds for readability, and video thumbnails use high-contrast imagery so content stands out.</li>
+        <li><strong>Repetition</strong> — The site applies consistent patterns (thumbnail grid, player chrome, channel headers) across pages which helps users form expectations.</li>
+        <li><strong>Alignment</strong> — Elements are well-aligned in predictable grid layouts; player controls and metadata are consistently placed which supports scanning and interaction.</li>
+        <li><strong>Proximity</strong> — Related controls (title, channel, metadata, subscribe button) are grouped close to the player; recommendations are visually separated so users can distinguish primary content from related items.</li>
+      </ul>
+      <p>Assessment: YouTube follows the CRAP principles closely — strong contrast and consistent repetition make content easy to scan. Alignment and proximity are well-handled in the player and listing pages. Its scale and personalization introduce some complexity, but overall the design supports user goals effectively.</p>
+    </section>
+
+    <section>
+      <h3><a href="https://www.friv.com" target="_blank" rel="noopener">Friv</a></h3>
+      <p>Friv is a miscellaneous game-portal site that serves many lightweight browser games via a simple tile interface and lots of third-party content. The visual presentation is cluttered and inconsistent.</p>
+      <ul class="crap-list">
+        <li><strong>Contrast</strong> — Contrast is often low or chaotic, with many colorful tiles and backgrounds competing for attention which can make it hard to focus.</li>
+        <li><strong>Repetition</strong> — Repetition is limited; different tiles and external embeds use widely varying styles, so patterns are hard to learn.</li>
+        <li><strong>Alignment</strong> — Alignment is inconsistent: advertising, game tiles, and text blocks frequently collide or are offset, producing a scattered layout.</li>
+        <li><strong>Proximity</strong> — Related items (game title, play button, ads) are sometimes separated or mixed with unrelated content, which reduces clarity about what to click or expect.</li>
+      </ul>
+      <p>Assessment: Friv largely fails the CRAP principles — low/competing contrast, poor repetition, inconsistent alignment, and mixed proximity make it hard for users to quickly understand or trust the interface. The site feels noisy and crowded as a result.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+
+  <script src="scripts/HTML.Include.min.js"></script>
+</body>
+</html>

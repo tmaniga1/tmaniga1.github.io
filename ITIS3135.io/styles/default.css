@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ITIS 3135 || Home Webpage</title>
-  <style>
-    :root {
+:root {
       --dark-blue: #2B2D42;
       --gray: #8D99AE;
       --off-white: #EDF2F4;
@@ -94,6 +87,21 @@
       color: var(--deep-red);
       text-decoration: underline;
     }
+    /* Global link styles so default browser blue/purple colors are overridden */
+    a {
+      color: var(--dark-blue);
+      text-decoration: none;
+    }
+    a:visited {
+      color: var(--gray);
+    }
+    a:hover, a:focus {
+      color: var(--red);
+      text-decoration: underline;
+    }
+    a:active {
+      color: var(--deep-red);
+    }
     /* Responsive styles for 3 device sizes */
     @media (max-width: 900px) {
       main { max-width: 98%; width: 98%; }
@@ -109,24 +117,3 @@
       header h1 { font-size: 1.1em; }
       section { padding: 0.5em; }
     }
-  </style>
-  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header>
-    <h1>ITIS 3135 || Home Webpage</h1>
-    <div data-include="components/header.html"></div>
-  </header>
-  <main>
-    <section>
-      <h2>Welcome</h2>
-      <p>This is the homepage for ITIS 3135, Web Development, Fall 2025.</p>
-      <p>Use the navigation links above to explore the site.</p>
-    </section>
-  </main>
-  <footer>
-        <div data-include="components/footer.html"></div>
-  </footer>
-  <script src="scripts/HTML.Include.min.js"></script>
-</body>
-</html>

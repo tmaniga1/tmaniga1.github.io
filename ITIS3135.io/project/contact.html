@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles/project.css">
+</head>
+<body class="project-site">
+  <header class="project-header">
+    <h1>Contact</h1>
+    <div data-include="components/header.html"></div>
+  </header>
+  <main class="project-main">
+    <section class="project-card">
+      <h2>Contact / Questions</h2>
+      <p>If you have questions about the course or assignments, please contact the instructor at <a href="mailto:instructor@example.edu">instructor@example.edu</a>.</p>
+      <h3>Submit Feedback</h3>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email">
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+        <div style="margin-top:0.6em"><button class="btn primary" type="submit">Send</button></div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/project.js"></script>
+  <script src="../scripts/HTML.Include.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction</title>
+  <style>
+    :root {
+      --dark-blue: #2B2D42;
+      --gray: #8D99AE;
+      --off-white: #EDF2F4;
+      --red: #EF233C;
+      --deep-red: #D80032;
+    }
+    body {
+      background: var(--off-white);
+      color: var(--dark-blue);
+    }
+    header {
+      background-color: var(--dark-blue);
+      color: var(--off-white);
+      padding: 3em 1em 2em 1em;
+      margin-bottom: 2em;
+      border-radius: 0 0 2em 2em;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    header h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+      letter-spacing: 2px;
+      color: var(--off-white);
+    }
+    header nav {
+      text-align: center;
+      margin-top: 1em;
+    }
+    header nav a {
+      color: var(--red);
+      font-weight: bold;
+      margin: 0 0.5em;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    header nav a:hover {
+      color: var(--deep-red);
+      text-decoration: underline;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 40vh;
+    }
+    section {
+      background: var(--off-white);
+      border-radius: 1em;
+      box-shadow: 0 2px 12px rgba(43,45,66,0.07);
+      padding: 2em 2.5em;
+      margin: 2em 0;
+      text-align: left;
+      border: 1px solid var(--gray);
+    }
+    section h2 {
+      color: var(--red);
+      margin-top: 0;
+    }
+    section p {
+      line-height: 1.6;
+      margin-bottom: 1em;
+      font-size: 1.1em;
+      text-align: center;
+    }
+    footer {
+      background: var(--dark-blue);
+      color: var(--off-white);
+      padding: 1.5em 0 0.5em 0;
+      border-radius: 2em 2em 0 0;
+      margin-top: 3em;
+	  text-align: center;
+    }
+    footer nav a {
+      color: var(--red);
+      margin: 0 0.5em;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    footer nav a:hover {
+      color: var(--deep-red);
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      section { padding: 1em; }
+      header h1 { font-size: 1.5em; }
+    }
+    /* Responsive image used on this page */
+    .section-img {
+      display: block;
+      max-width: 360px;
+      width: 100%;
+      height: auto;
+      margin: 0.8em auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+  </style>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Introduction</h1>
+    <div data-include="components/header.html"></div>
+  </header>
+  <main>
+    <section>
+      <h2>Tyson Manigault</h2>
+      <img src="images/IMG_3271.JPG" alt="Tyson Manigault" class="section-img">
+      <p>Hello everyone my name is Tyson! I don’t really do much around campus but I do want to get involved for sure. I enjoy going to the gym, watching anime, and spending time with friends. I do plan on joining one or two clubs to fill up my time but hopefully my schedule doesn’t ruin that. I don’t have much left to say but I feel like my paragraph is really short so shout out my girlfriend she’s pretty cool.</p>
+      <p><strong>Personal Background:</strong> I was born here in Charlotte, NC and have lived a good 19 years here.</p>
+      <p><strong>Academic Background:</strong> I am a second-year student majoring in Computer Science, hoping to graduate by May 2027. I have a concentration in Information Technology.</p>
+      <p><strong>Professional Background:</strong> Lowkey nothing yet I got no bag fr 😭</p>
+      <p><strong>Primary Computer:</strong> I have a Lenovo Windows Laptop that I mainly use at my dorm or in the library.</p>
+      <ul><strong>Courses I'm Taking and Why:</strong>
+        <li><strong>ITIS 3135 - Web Application Development</strong>: This course is about learning how to make websites and applications I believe, so I picked it because that sounds cool.</li>
+        <li><strong>CTCM 2530 - Exploring News Media Literacy in a Complex Information Environment</strong>: This course interests me because news is at a crazy point in this day and age and I want to learn how to navigate through it.</li>
+        <li><strong>ANTH 1501 - Global Social Science</strong>: I’m just taking this class because I know a little about anthropology and it should be really easy.</li>
+        <li><strong>ITIS 3130 - Human-Centered Computing</strong>: I’m taking this class because I find it interesting how things are designed to be used by people specifically.</li>
+        <li><strong>ITSC 2610 - Computing Leadership Dev</strong>: This course was required with a scholarship I have but it seems useful for gaining leadership skills and networking.</li>
+        <li><strong>ECON 2102 - Principles of Economics-Micro</strong>: I’m taking this course to see if I want to minor in economics but if not just for the easy A.</li>
+      </ul>
+      <p><strong>Funny/Interesting Item to Remember Me by:</strong> If I’m not studying or at the gym, I’m most likely playing Clash Royale.</p>
+      <p>“Pirates will feast on the meat, but the hero will distribute it among the people! I want to eat meat!” - <i>Monkey D. Luffy</i></p>
+    </section>
+  </main>
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/HTML.Include.min.js"></script>
+</body>
+</html>

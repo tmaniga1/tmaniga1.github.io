@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS 3135 || Introduction Form</title>
+    <style>
+        :root {
+            --dark-blue: #2B2D42;
+            --gray: #8D99AE;
+            --off-white: #EDF2F4;
+            --red: #EF233C;
+            --deep-red: #D80032;
+        }
+        body { 
+            background: var(--off-white);
+            color: var(--dark-blue);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: var(--dark-blue);
+            color: var(--off-white);
+            padding: 3em 1em 2em 1em;
+            margin-bottom: 2em;
+            border-radius: 0 0 2em 2em;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        header h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+      letter-spacing: 2px;
+      color: var(--off-white);
+    }
+    header nav, footer nav {
+      text-align: center;
+      margin-top: 1em;
+    }
+    header nav a, footer nav a {
+      color: var(--red);
+      font-weight: bold;
+      margin: 0 0.5em;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    header nav a:hover, footer nav a:hover {
+      color: var(--off-white);
+      text-decoration: underline;
+    }
+    footer {
+      background: var(--dark-blue);
+      color: var(--off-white);
+      padding: 1.5em 0 0.5em 0;
+      border-radius: 2em 2em 0 0;
+      margin-top: 3em;
+	  text-align: center;
+    }
+        main { display:flex; justify-content:center }
+        form, .result { width:100%; max-width:720px }
+        label { display:block; font-weight:600; margin-bottom:0.25em }
+        input[type="text"], input[type="date"], input[type="url"], textarea { width:100%; padding:0.5em; border:1px solid var(--gray); border-radius:6px; box-sizing:border-box }
+        textarea { min-height:80px }
+        .row { display:flex; gap:0.5em }
+        .row .col { flex:1 }
+        .field { margin-bottom:0.8em }
+        .section-img { display:block; max-width:360px; width:100%; height:auto; margin:0.8em auto; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.08) }
+        .img-caption { text-align:center; font-size:0.95em; color:#666; margin-bottom:1em }
+        button { padding:0.5em 0.9em; border-radius:6px; border:none; cursor:pointer }
+        .btn-primary { background:var(--dark-blue); color:var(--off-white) }
+        .btn-secondary { background:#eee }
+    </style>
+        <!-- Highlight.js CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Introduction Form</h1>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <form id="introForm">
+            <h3>Please submit the form below.</h3>
+
+            <div class="field">
+                <label for="first">First Name *</label>
+                <input id="first" name="first" type="text" required value="Tyson">
+            </div>
+
+            <div class="field">
+                <label for="middle">Middle Name (optional)</label>
+                <input id="middle" name="middle" type="text" placeholder="Middle name or initial">
+            </div>
+
+            <div class="field">
+                <label for="nick">Nickname (optional)</label>
+                <input id="nick" name="nick" type="text" placeholder="Preferred name" value="Tyson">
+            </div>
+
+            <div class="field">
+                <label for="last">Last Name *</label>
+                <input id="last" name="last" type="text" required value="Manigault">
+            </div>
+
+            <div class="field">
+                <label for="ack">Acknowledgment Statement *</label>
+                <input id="ack" name="ack" type="text" required value="I acknowledge this is my work">
+            </div>
+
+            <div class="field">
+                <label for="ackdate">Acknowledgement Date *</label>
+                <input id="ackdate" name="ackdate" type="date" required value="2025-10-26">
+            </div>
+
+            <div class="field">
+                <label for="mascAdj">Mascot Adjective *</label>
+                <input id="mascAdj" name="mascAdj" type="text" required value="Tested">
+            </div>
+
+            <div class="field">
+                <label for="mascAnimal">Mascot Animal *</label>
+                <input id="mascAnimal" name="mascAnimal" type="text" required value="Mantas">
+            </div>
+
+            <div class="field">
+                <label for="divider">Divider (symbol)</label>
+                <input id="divider" name="divider" type="text" placeholder="e.g. ~ or | or ♥️" value="~">
+            </div>
+
+            <div class="field">
+                <label for="picture">Picture (upload or leave default)</label>
+                <input id="picture" name="picture" type="file" accept="image/*">
+                <p style="font-size:0.9em;color:#666">Default image will be used if none uploaded.</p>
+                <img id="preview" src="images/IMG_3271.JPG" alt="Preview" class="section-img">
+                <div class="img-caption">Preview</div>
+                <label for="piccap">Picture caption</label>
+                <input id="piccap" name="piccap" type="text" placeholder="Caption" value="Tyson Manigault">
+            </div>
+
+            <div class="field">
+                <label for="personal">Personal Statement *</label>
+                <textarea id="personal" name="personal" required>Welcome to my introduction page!</textarea>
+            </div>
+
+            <h4>7 Main Bullets (required)</h4>
+            <div id="bullets">
+                <div class="field"><input name="bullet1" placeholder="Bullet 1" value="Personal background" required></div>
+                <div class="field"><input name="bullet2" placeholder="Bullet 2" value="Academic background" required></div>
+                <div class="field"><input name="bullet3" placeholder="Bullet 3" value="Interests" required></div>
+                <div class="field"><input name="bullet4" placeholder="Bullet 4" value="Skills" required></div>
+                <div class="field"><input name="bullet5" placeholder="Bullet 5" value="Projects" required></div>
+                <div class="field"><input name="bullet6" placeholder="Bullet 6" value="Goals" required></div>
+                <div class="field"><input name="bullet7" placeholder="Bullet 7" value="Contact" required></div>
+            </div>
+
+            <h4>Courses</h4>
+            <div id="courses"></div>
+            <button type="button" id="addCourse" class="btn-secondary">Add Course</button>
+
+            <div class="field">
+                <label for="quote">Quote *</label>
+                <input id="quote" name="quote" type="text" required value="Keep pushing forward.">
+            </div>
+            <div class="field">
+                <label for="quoteAuth">Quote Author *</label>
+                <input id="quoteAuth" name="quoteAuth" type="text" required value="Unknown">
+            </div>
+
+            <div class="field">
+                <label for="funny">Funny thing (optional)</label>
+                <input id="funny" name="funny" type="text" placeholder="A funny thing...">
+            </div>
+            <div class="field">
+                <label for="share">Something I'd like to share (optional)</label>
+                <input id="share" name="share" type="text" placeholder="Share something">
+            </div>
+
+            <h4>Links (5)</h4>
+            <div class="field"><input name="link1" type="url" placeholder="https://" value="https://github.com/tmaniga1"></div>
+            <div class="field"><input name="link2" type="url" placeholder="https://"></div>
+            <div class="field"><input name="link3" type="url" placeholder="https://"></div>
+            <div class="field"><input name="link4" type="url" placeholder="https://"></div>
+            <div class="field"><input name="link5" type="url" placeholder="https://"></div>
+
+                <div style="margin-top:1em; display:flex; gap:0.5em; align-items:center;">
+                <button type="submit" class="btn-primary">Submit</button>
+                <button type="reset" class="btn-secondary">Reset</button>
+                <button type="button" id="clearBtn" class="btn-secondary">Clear</button>
+                <button type="button" id="genJsonBtn" class="btn-secondary">Generate JSON</button>
+                <button type="button" id="genHtmlBtn" class="btn-secondary">Generate HTML</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/HTML.Include.min.js"></script>
+    <script src="scripts/introduction.js"></script>
+    <script src="scripts/generate_json.js"></script>
+    <script src="scripts/generate_html.js"></script>
+</body>
+</html>

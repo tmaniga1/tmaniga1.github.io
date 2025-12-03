@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITIS 3135 || FCC FSJS Outline</title>
+  <style>
+    :root {
+      --dark-blue: #2B2D42;
+      --gray: #8D99AE;
+      --off-white: #EDF2F4;
+      --red: #EF233C;
+      --deep-red: #D80032;
+    }
+    body {
+      background: var(--off-white);
+      color: var(--dark-blue);
+    }
+    header {
+      background-color: var(--dark-blue);
+      color: var(--off-white);
+      padding: 3em 1em 2em 1em;
+      margin-bottom: 2em;
+      border-radius: 0 0 2em 2em;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    header h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 0.2em;
+      letter-spacing: 2px;
+      color: var(--off-white);
+    }
+    header nav, footer nav {
+      text-align: center;
+      margin-top: 1em;
+    }
+    header nav a, footer nav a {
+      color: var(--red);
+      font-weight: bold;
+      margin: 0 0.5em;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    header nav a:hover, footer nav a:hover {
+      color: var(--off-white);
+      text-decoration: underline;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 40vh;
+    }
+    section {
+      background: var(--off-white);
+      border-radius: 1em;
+      box-shadow: 0 2px 12px rgba(43,45,66,0.07);
+      padding: 2em 2.5em;
+      margin: 2em 0;
+      text-align: left;
+      border: 1px solid var(--gray);
+    }
+    section h2 {
+      color: var(--red);
+      margin-top: 0;
+    }
+    section p {
+      line-height: 1.6;
+      margin-bottom: 1em;
+      font-size: 1.1em;
+    }
+    footer {
+      background: var(--dark-blue);
+      color: var(--off-white);
+      padding: 1.5em 0 0.5em 0;
+      border-radius: 2em 2em 0 0;
+      margin-top: 3em;
+	  text-align: center;
+    }
+    @media (max-width: 600px) {
+      section { padding: 1em; }
+      header h1 { font-size: 1.5em; }
+    }
+    table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5em;
+            font-size: 1em;
+          }
+          th, td {
+            border: 1px solid var(--gray);
+            padding: 0.7em 1em;
+            text-align: left;
+          }
+          th {
+            background: var(--dark-blue);
+            color: var(--off-white);
+            font-weight: bold;
+            letter-spacing: 1px;
+          }
+          tr:nth-child(even) td {
+            background: #ffffff;
+          }
+          tr:nth-child(odd) td {
+            background: var(--off-white);
+          }
+            th, td {
+              padding: 0.5em 0.3em;
+            }
+  </style>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>ITIS 3135</h1>
+    <div data-include="components/header.html"></div>
+  </header>
+  <main>
+    <section>
+      <h2>FCC FSJS Outline</h2>
+      <table>
+          <thead>
+            <tr>
+              <th>Section</th>
+              <th>Steps</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Code Editors</td><td>5</td><td>Introduction to code editors like VS Code and how to configure them for JavaScript projects.</td></tr>
+            <tr><td>Variables and Strings</td><td>62</td><td>Learn to store and manipulate data using variables and strings, including concatenation and interpolation.</td></tr>
+            <tr><td>Booleans and Numbers</td><td>37</td><td>Explore numeric operations and Boolean logic to handle comparisons and decision-making.</td></tr>
+            <tr><td>Functions</td><td>38</td><td>Understand how to define and call reusable blocks of code to improve efficiency and readability.</td></tr>
+            <tr><td>Arrays</td><td>35</td><td>Work with ordered lists of data and apply useful array methods for manipulation and iteration.</td></tr>
+            <tr><td>Objects</td><td>28</td><td>Represent structured data with key-value pairs and learn how to access and update properties.</td></tr>
+            <tr><td>Loops</td><td>22</td><td>Automate repetitive tasks using for, while, and for...of loops for efficient iteration.</td></tr>
+            <tr><td>JavaScript Fundamentals Review</td><td>30</td><td>Reinforce and practice all core JavaScript basics before diving into advanced topics.</td></tr>
+            <tr><td>Higher Order Functions and Callbacks</td><td>37</td><td>Learn about functions as first-class objects, callbacks, and methods like map, filter, and reduce.</td></tr>
+            <tr><td>DOM Manipulation and Events</td><td>87</td><td>Interact dynamically with webpages by editing elements and handling user-driven events.</td></tr>
+            <tr><td>JavaScript and Accessibility</td><td>42</td><td>Write scripts that enhance usability and accessibility for all users, ensuring inclusive design.</td></tr>
+            <tr><td>Debugging</td><td>8</td><td>Identify and fix programming errors using debugging tools and the browser console.</td></tr>
+            <tr><td>Basic Regex</td><td>47</td><td>Use regular expressions to match, search, and replace text patterns in strings.</td></tr>
+            <tr><td>Form Validation</td><td>103</td><td>Ensure proper input handling and secure data through form validation techniques.</td></tr>
+            <tr><td>Dates</td><td>5</td><td>Work with JavaScript’s Date object to manage and format time and date values.</td></tr>
+            <tr><td>Audio and Video Events</td><td>55</td><td>Learn to control multimedia elements and respond to audio and video playback events.</td></tr>
+            <tr><td>Maps and Sets</td><td>37</td><td>Store unique values and key-value pairs with ES6 data structures like Map and Set.</td></tr>
+            <tr><td>localStorage and CRUD Operations</td><td>78</td><td>Persist data in the browser using localStorage and perform create, read, update, and delete operations.</td></tr>
+            <tr><td>Classes</td><td>68</td><td>Apply object-oriented programming principles by defining and using ES6 classes.</td></tr>
+            <tr><td>Recursion</td><td>112</td><td>Learn recursive problem-solving by having functions call themselves to break down complex logic.</td></tr>
+            <tr><td>Functional Programming</td><td>23</td><td>Adopt a functional programming style using pure functions and immutable data patterns.</td></tr>
+            <tr><td>Asynchronous JavaScript</td><td>36</td><td>Handle asynchronous behavior using callbacks, promises, and async/await syntax.</td></tr>
+          </tbody>
+        </table>
+      <section>
+      <h3>Personal Completion Schedule</h3>
+      <p>
+        I, Tyson Manigault, intend to finish the freeCodeCamp Full Stack Developer JavaScript assignment
+        within the next 6 weeks according to the following general schedule:
+      </p>
+        <p>Week 1 (Oct 6–12): Code Editors, Variables and Strings, Booleans and Numbers</p>
+        <p>Week 2 (Oct 13–19): Functions, Arrays, Objects, Loops</p>
+        <p>Week 3 (Oct 20–26): JavaScript Fundamentals Review, Higher Order Functions, DOM Manipulation</p>
+        <p>Week 4 (Oct 27–Nov 2): JavaScript and Accessibility, Debugging, Regex, Form Validation</p>
+        <p>Week 5 (Nov 3–9): Dates, Audio/Video Events, Maps/Sets, localStorage, Classes, Recursion</p>
+        <p>Week 6 (Nov 10–16): Functional Programming, Asynchronous JavaScript, Final Review</p>
+      <p>
+        I acknowledge that this is a single assignment within the course and will take responsibility for pacing myself.<br>
+        — <em>Tyson Manigault, October 5, 2025</em>
+      </p>
+    </section>
+    </section>
+  </main>
+  <footer>
+        <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/HTML.Include.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Practice — Python Exercises & Quizzes</title>
+  <link rel="stylesheet" href="styles/project.css">
+</head>
+<body class="project-site">
+  <header class="project-header">
+    <h1>Practice</h1>
+    <div data-include="components/header.html"></div>
+  </header>
+  <main class="project-main">
+    <section class="project-card">
+      <h2>Multiple Choice Quiz (Sample)</h2>
+      <form id="quiz-form">
+        <div class="question" data-correct="a">
+          <p><strong>1.</strong> What is the correct file extension for Python files?</p>
+          <label><input type="radio" name="q1" value="a"> a) .py</label><br>
+          <label><input type="radio" name="q1" value="b"> b) .js</label><br>
+          <label><input type="radio" name="q1" value="c"> c) .java</label>
+          <div class="result" aria-live="polite" style="margin-top:0.4em;"></div>
+        </div>
+
+        <div class="question" data-correct="c">
+          <p><strong>2.</strong> Which data type is immutable?</p>
+          <label><input type="radio" name="q2" value="a"> a) list</label><br>
+          <label><input type="radio" name="q2" value="b"> b) dict</label><br>
+          <label><input type="radio" name="q2" value="c"> c) tuple</label>
+          <div class="result" aria-live="polite" style="margin-top:0.4em;"></div>
+        </div>
+
+        <div style="margin-top:0.8em;">
+          <button class="btn primary" type="submit">Check Answers</button>
+          <span id="quiz-score" style="margin-left:0.8em;font-weight:bold"></span>
+        </div>
+      </form>
+    </section>
+
+    <section class="project-card">
+      <h2>Practical Exercise</h2>
+      <p>Build a small script that reads a text file and prints the number of lines that contain the word "python" (case-insensitive).</p>
+      <p>Submission: Paste your solution in the Study Tools page or email it to the instructor.</p>
+    </section>
+
+    <section class="project-card">
+      <h2>Python Playground</h2>
+      <p>Type small Python programs and run them in your browser (client-side).</p>
+      <div id="py-playground"></div>
+      <p style="margin-top:0.4em;">Tip: If a code sample has a "Try in Playground" button, click it to load the code here.</p>
+    </section>
+  </main>
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/project.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/dist/skulpt-stdlib.js"></script>
+  <script src="scripts/playground.js"></script>
+  <script src="../scripts/HTML.Include.min.js"></script>
+</body>
+</html>
